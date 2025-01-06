@@ -38,6 +38,70 @@
 - Example: For Oslo, Norway - `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
+ 
+#### weather data returned
+
+```json5
+{
+    "properties": {
+        "meta": {
+            "units": {
+                "air_pressure_at_sea_level": "hPa",
+                "air_temperature": "celsius",
+                "cloud_area_fraction": "%",
+                "precipitation_amount": "mm",
+                "relative_humidity": "%",
+                "wind_from_direction": "degrees",
+                "wind_speed": "m/s"
+            },
+            "updated_at": "2025-01-06T08:26:24Z"
+        },
+        // only one typical object is shown in the 'timeseries' array, but there will be many
+        "timeseries": [
+            {
+                "data": {
+                    "instant": {
+                        "details": {
+                            "air_pressure_at_sea_level": 995.1,
+                            "air_temperature": -4.5,
+                            "cloud_area_fraction": 100.0,
+                            "relative_humidity": 81.7,
+                            "wind_from_direction": 50.4,
+                            "wind_speed": 7.0
+                        }
+                    },
+                    // optional field
+                    "next_12_hours": {
+                        "details": {},
+                        "summary": {
+                            "symbol_code": "snow"
+                        }
+                    },
+                    // optional field
+                    "next_1_hours": {
+                        "details": {
+                            "precipitation_amount": 0.4
+                        },
+                        "summary": {
+                            "symbol_code": "snow"
+                        }
+                    },
+                    // optional field
+                    "next_6_hours": {
+                        "details": {
+                            "precipitation_amount": 4.4
+                        },
+                        "summary": {
+                            "symbol_code": "snow"
+                        }
+                    }
+                },
+                "time": "2025-01-06T09:00:00Z"
+            }
+        ]
+    }
+}
+```
 
 ### sun and moon data for a latitude and longitude
 
@@ -50,7 +114,7 @@
 
 Relevant data provided by this endpoint:
 
-```json
+```json5
 {
     "properties": {
         "solarmidnight": {
@@ -77,7 +141,7 @@ Relevant data provided by this endpoint:
 
 #### moon
 
-```json
+```json5
 {
     "properties": {
         "high_moon": {
