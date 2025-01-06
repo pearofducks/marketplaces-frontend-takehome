@@ -29,17 +29,15 @@
 
 ### converting city/country to latitude/longitude
 
-- Provider's docs: [Nominatim](https://nominatim.org/release-docs/develop/api/Search/)
 - Example: For Oslo, Norway - `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
 
 ### weather data for a latitude and longitude
 
-- Provider's docs: [met.no](https://api.met.no/weatherapi/locationforecast/2.0/documentation)
-- Example: For Oslo, Norway - `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.913&lon=10.739`
+- Example: For Oslo, Norway - `https://www.finn.no/pf/wx/compact?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
 
-<details><summary>Weather data returned</summary>
+<details><summary>Expand to see weather data returned</summary>
 
 ```json5
 {
@@ -107,14 +105,12 @@
 
 ### sun and moon data for a latitude and longitude
 
-- Provider's docs: [met.no](https://api.met.no/weatherapi/sunrise/3.0/documentation)
-- Example: For Oslo, Norway - `https://api.met.no/weatherapi/sunrise/3.0/moon?lat=59.913&lon=10.739`
+- Example for solar: For Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&lon=10.739`
+- Example for lunar: For Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/moon?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
 
-#### sun
-
-Relevant data provided by this endpoint:
+<details><summary>Expand to see solar data returned</summary>
 
 ```json5
 {
@@ -141,7 +137,9 @@ Relevant data provided by this endpoint:
 }
 ```
 
-#### moon
+</details>
+
+<details><summary>Expand to see lunar data returned</summary>
 
 ```json5
 {
@@ -168,3 +166,5 @@ Relevant data provided by this endpoint:
     }
 }
 ```
+
+</details>
