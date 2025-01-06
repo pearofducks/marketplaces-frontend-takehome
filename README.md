@@ -219,3 +219,14 @@ Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&
 ```
 
 </details>
+
+## Moon phases
+
+|Degrees   | Descripton      |
+| -------- | --------------- |
+| 0        | New moon        |
+| 0..90    | Waxing crescent |
+| 90..180  | Waxing gibbous  |
+| 180      | Full moon       |
+| 180..270 | Waning gibbous  |
+| 270..360 | Waning crescent |
