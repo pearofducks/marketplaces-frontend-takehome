@@ -86,7 +86,7 @@ Example URL For Oslo, Norway: `https://nominatim.openstreetmap.org/search?city=O
 
 ### weather data for a latitude and longitude
 
-Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/compact?lat=59.913&lon=10.739`
+Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/weather/compact?lat=59.913&lon=10.739`
 
 <details><summary>Expand to see data returned</summary>
 
