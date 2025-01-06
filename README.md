@@ -32,9 +32,9 @@
 
 ### converting city/country to latitude/longitude
 
-**Example URL For Oslo, Norway:** `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
+Example URL For Oslo, Norway: `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
 
-<details><summary><bold>Expand to see data returned</bold></summary>
+<details><summary>Expand to see data returned</summary>
 
 ```json5
 [
@@ -85,7 +85,7 @@
 
 ### weather data for a latitude and longitude
 
-- Example: For Oslo, Norway - `https://www.finn.no/pf/wx/compact?lat=59.913&lon=10.739`
+Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/compact?lat=59.913&lon=10.739`
 
 <details><summary>Expand to see data returned</summary>
 
@@ -155,7 +155,7 @@
 
 ### solar data for a latitude and longitude
 
-- Example for Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&lon=10.739`
+Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&lon=10.739`
 
 <details><summary>Expand to see data returned</summary>
 
