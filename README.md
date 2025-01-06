@@ -9,6 +9,7 @@
 - A city and country should be accepted - and then present a 5-day forecast, as well as information on the next sunrise, sunset, moonrise, moonset, and moon phase.
     - All the APIs needed for this task are provided below.
 - You should format the dates/times for the weather, ISO date formatting isn't very friendly for users. Likewise you should translate the moon phase into something understandable for a normal person.
+    - Moon phases can be translated using [this table](#moon-phases)
 - You will not be judged on 'design'. You do not need to worry about pretty colors, shadows, etc. You may need some CSS for layout (e.g. if you feel a sidebar or two-column layout is appropriate) or helping create a sense of hierarchy - but you do not (f.ex) need to worry about substituting stock fonts out for something else.
 - You do not need to worry about error conditions from the API or presenting errors to the user
 
