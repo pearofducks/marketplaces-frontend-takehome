@@ -38,8 +38,8 @@
 - Example: For Oslo, Norway - `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
- 
-#### weather data returned
+
+<details><summary>Weather data returned</summary>
 
 ```json5
 {
@@ -103,13 +103,15 @@
 }
 ```
 
+</details>
+
 ### sun and moon data for a latitude and longitude
 
 - Provider's docs: [met.no](https://api.met.no/weatherapi/sunrise/3.0/documentation)
 - Example: For Oslo, Norway - `https://api.met.no/weatherapi/sunrise/3.0/moon?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
- 
+
 #### sun
 
 Relevant data provided by this endpoint:
