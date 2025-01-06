@@ -45,3 +45,32 @@
 - Example: For Oslo, Norway - `https://api.met.no/weatherapi/sunrise/3.0/moon?lat=59.913&lon=10.739`
 - Notes:
     - You should send a maximum of 3 decimals for the `lat`/`lon` values
+ 
+#### sun
+
+Relevant data provided by this endpoint:
+
+```json
+{
+    "properties": {
+        "solarmidnight": {
+            "disc_centre_elevation": -52.59,
+            "time": "2025-01-05T23:22+00:00",
+            "visible": false
+        },
+        "solarnoon": {
+            "disc_centre_elevation": 7.67,
+            "time": "2025-01-06T11:23+00:00",
+            "visible": true
+        },
+        "sunrise": {
+            "azimuth": 137.43,
+            "time": "2025-01-06T08:14+00:00"
+        },
+        "sunset": {
+            "azimuth": 222.67,
+            "time": "2025-01-06T14:31+00:00"
+        }
+    },
+}
+```
