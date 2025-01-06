@@ -27,17 +27,67 @@
 
 ## APIs
 
+> [!CAUTION]
+> For all `finn.no` endpoints, you should send a maximum of 3 decimals for the `lat` and `lon` query parameters.
+
 ### converting city/country to latitude/longitude
 
 - Example: For Oslo, Norway - `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
 
+<details><summary>Expand to see data returned</summary>
+
+```json5
+[
+  {
+    "place_id": 149918278,
+    "osm_type": "relation",
+    "osm_id": 406091,
+    "lat": "59.9133301",
+    "lon": "10.7389701",
+    "class": "boundary",
+    "type": "administrative",
+    "place_rank": 12,
+    "importance": 0.762636026573792,
+    "addresstype": "county",
+    "name": "Oslo",
+    "display_name": "Oslo, Norway",
+    "boundingbox": [
+      "59.8093113",
+      "60.1351064",
+      "10.4891652",
+      "10.9513894"
+    ]
+  },
+  {
+    "place_id": 151483229,
+    "osm_type": "relation",
+    "osm_id": 2775550,
+    "lat": "59.97239745",
+    "lon": "10.775729194051895",
+    "class": "boundary",
+    "type": "administrative",
+    "place_rank": 14,
+    "importance": 0.444716384691183,
+    "addresstype": "municipality",
+    "name": "Oslo",
+    "display_name": "Oslo, Norway",
+    "boundingbox": [
+      "59.8093113",
+      "60.1351064",
+      "10.4891652",
+      "10.9513894"
+    ]
+  }
+]
+```
+
+</details>
+
 ### weather data for a latitude and longitude
 
 - Example: For Oslo, Norway - `https://www.finn.no/pf/wx/compact?lat=59.913&lon=10.739`
-- Notes:
-    - You should send a maximum of 3 decimals for the `lat`/`lon` values
 
-<details><summary>Expand to see weather data returned</summary>
+<details><summary>Expand to see data returned</summary>
 
 ```json5
 {
@@ -103,14 +153,11 @@
 
 </details>
 
-### sun and moon data for a latitude and longitude
+### solar data for a latitude and longitude
 
-- Example for solar: For Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&lon=10.739`
-- Example for lunar: For Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/moon?lat=59.913&lon=10.739`
-- Notes:
-    - You should send a maximum of 3 decimals for the `lat`/`lon` values
+- Example for Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&lon=10.739`
 
-<details><summary>Expand to see solar data returned</summary>
+<details><summary>Expand to see data returned</summary>
 
 ```json5
 {
@@ -139,7 +186,11 @@
 
 </details>
 
-<details><summary>Expand to see lunar data returned</summary>
+### lunar data for a latitude and longitude
+
+- Example for Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/moon?lat=59.913&lon=10.739`
+
+<details><summary>Expand to see data returned</summary>
 
 ```json5
 {
