@@ -71,6 +71,34 @@ Relevant data provided by this endpoint:
             "azimuth": 222.67,
             "time": "2025-01-06T14:31+00:00"
         }
-    },
+    }
+}
+```
+
+#### moon
+
+```json
+{
+    "properties": {
+        "high_moon": {
+            "disc_centre_elevation": 35.37,
+            "time": "2025-01-06T16:56+00:00",
+            "visible": true
+        },
+        "low_moon": {
+            "disc_centre_elevation": -28.33,
+            "time": "2025-01-06T04:32+00:00",
+            "visible": false
+        },
+        "moonphase": 76.61,
+        "moonrise": {
+            "azimuth": 81.82,
+            "time": "2025-01-06T10:15+00:00"
+        },
+        "moonset": {
+            "azimuth": null,
+            "time": null
+        }
+    }
 }
 ```
