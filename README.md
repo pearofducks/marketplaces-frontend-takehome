@@ -32,9 +32,9 @@
 
 ### converting city/country to latitude/longitude
 
-- Example: For Oslo, Norway - `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
+**Example URL For Oslo, Norway:** `https://nominatim.openstreetmap.org/search?city=Oslo&country=Norway&format=json`
 
-<details><summary>Expand to see data returned</summary>
+<details><summary><bold>Expand to see data returned</bold></summary>
 
 ```json5
 [
