@@ -189,7 +189,7 @@ Example URL for Oslo, Norway: `https://www.finn.no/pf/wx/sunmoon/sun?lat=59.913&
 
 ### lunar data for a latitude and longitude
 
-- Example for Oslo, Norway - `https://www.finn.no/pf/wx/sunmoon/moon?lat=59.913&lon=10.739`
+Example for Oslo, Norway: `https://www.finn.no/pf/wx/sunmoon/moon?lat=59.913&lon=10.739`
 
 <details><summary>Expand to see data returned</summary>
 
